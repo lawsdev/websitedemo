@@ -66,9 +66,6 @@ a:hover {
 .fptext {
     padding: 50px;     
 }
-.fptext > a {
-
-}
 
 /* sections */
 .sectioncontainer {
@@ -85,4 +82,86 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+
+
+
+
+/*  */
+/*  */
+/* Mobile View */
+@media (max-width:600px)  {
+.container {
+    background-color: #f7d1f3;
+    font-family: Shippori Antique, sans-serif;
+    font-size: 1.5em;
+    max-width: 100vw;
+    overflow-x:hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* header */
+.header {
+    height: 300px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headercontent {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.headercontent > h1 {
+    max-width: 50vw;
+    font-size: 50px;
+
+}
+.navlinks {
+    /* width: 475px; */
+    margin: 0;
+    font-size: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline dotted rgba(0, 0, 0, 0.25);
+}
+
+/* postcard gen demo: turn off */
+.showoff {
+    display: none;
+ }
+
+.sectioncontainer {
+    max-width: 100vw;
+    width: 80%;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.footer > p, .footer > a {
+    padding: 0;
+    margin: 0;
+}
 }

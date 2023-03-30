@@ -26,10 +26,10 @@ const HomePage = ({ children }) => {
         {/* featured project */}
         <div className="featuredproject">
             <div className='fptext'>
-                <h3>featured project →</h3>
-                <p>postcard generator</p>
+                <h3>featured project ↓</h3>
+                <Link to="/postcardgen"><p style={{textDecoration:"underline dotted", border:"solid 2px black", borderRadius:"2px", textAlign:"center", padding:"10px"}}>postcard generator</p></Link>
             </div>
-            <div>
+            <div className='showoff'>
                 { children }
             </div>
         </div>
@@ -42,8 +42,8 @@ const HomePage = ({ children }) => {
             {/* experience */}
             <div style={{alignItems:"flex-end"}} className="sectioncontainer" id='experience'>
                 <h2>#Experience & Education</h2>
-                <p>I have studied web development with Javascript, software development with C#, and UX Design with Code Louisville. </p>
-                <p>I currently work as a bespoke Shopify developer on vismarkproducts.com. </p>
+                <p style={{textAlign:'end'}}>I have studied web development with Javascript, software development with C#, and UX Design with Code Louisville. </p>
+                <p style={{textAlign:'end'}}>I currently work as a bespoke Shopify developer on vismarkproducts.com. </p>
             </div>
             {/* projects */}
             <div className="sectioncontainer" id='projects'>
@@ -55,11 +55,11 @@ const HomePage = ({ children }) => {
             <div className="sectioncontainer" style={{alignItems:"flex-end"}} id="contact">
                 <h2>#Contact</h2>
                 <p>email me at <a href="mailto:hello@isabellalawson.com">hello@isabellalawson.com</a></p>
-                <img style={{width: "50px"}} src="https://imgs.search.brave.com/IQj7XKPfcvtBGOVI2u-0DVIIvOeDtEjfj1jibbw72Cw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zZ3Vy/dS5vcmcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDIvbGlu/a2VkaW4tcG5nLWxp/bmtlZGluLWljb24t/MTYwMC5wbmc" />
+                <a href="https://www.linkedin.com/in/isabellalawson/"><img style={{width: "50px"}} src="https://imgs.search.brave.com/IQj7XKPfcvtBGOVI2u-0DVIIvOeDtEjfj1jibbw72Cw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zZ3Vy/dS5vcmcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDIvbGlu/a2VkaW4tcG5nLWxp/bmtlZGluLWljb24t/MTYwMC5wbmc" /></a>
             </div>
         {/* footer */}
         <div className='footer'>
-            <img style={{maxWidth: "50px"}} src="https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc" />
+            <a href="https://github.com/lawsdev"><img style={{maxWidth: "50px"}} src="https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc" /></a>
             <p>copyright {date} Isabella Lawson</p>
         </div>
     </div>
