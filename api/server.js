@@ -15,6 +15,7 @@ mongoose.connect(`mongodb+srv://lawsdev:Codeshow@lawsdev.qob4yyh.mongodb.net/MER
 	.then(() => console.log("You have successfully connected!!!!"))
 	.catch(console.error);
 
+// Image Model 
 const Image = require('./models/ImageModel');
 
 app.get('/images', async (req, res) => {
@@ -44,6 +45,39 @@ app.put('/image/update/:id', async (req, res) => {
 
 	res.json(image);
 });
+
+// Background Image Model
+const BGImage = require('./models/BGImageModel');
+
+app.get('/bgimages', async (req, res) => {
+	const bgimages = await BGImage.find();
+
+	res.json(bgimages);
+});
+
+app.post('/bgimage/new', (req, res) => {
+	const bgimage = new BGImage({
+		imageUrl: req.body.imageUrl,
+		assetName: req.body.assetName
+	})
+
+	bgimage.save();
+
+	res.json(bgimage);
+});
+
+app.put('/bgimage/update/:id', async (req, res) => {
+	const bgimage = await BGImage.findById(req.params.id);
+
+	bgimage.assetName = req.body.assetName;
+	bgimage.imageUrl = req.body.imageUrl;
+
+	bgimage.save();
+
+	res.json(bgimage);
+});
+
+
 
 
 app.listen(3001, () => console.log("server: port 3001"));

@@ -16,6 +16,19 @@ PUT http://localhost:3001/image/update/642390d12bd01aaa39240460
 Content-Type: application/json
 
 {
-    "assetName": "caw caw",
-    "imageUrl": "https://storage.googleapis.com/lawsdev/crow.png"
+    "assetName": "man",
+    "imageUrl": "https://storage.googleapis.com/lawsdev/man.png"
+}
+
+###
+# BG images 
+GET http://localhost:3001/bgimages
+
+###
+POST http://localhost:3001/bgimage/new 
+Content-Type: application/json
+
+{
+"imageUrl": "https://storage.googleapis.com/lawsdev/nightocean.png", 
+"assetName": "surprise "
 }
