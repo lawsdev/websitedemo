@@ -28,3 +28,10 @@
    ```sh
    npm start
    ```
+ ## Features list:
+ 1. Custom external API
+ 2. Express server
+ 3. Stored data on MongoDB. 
+ 4. Implemented drag and drop on my postcard generator. 
+ 5. Used react to develop the app. 
+ 6. Mapped API data with Javascript to use in app. 

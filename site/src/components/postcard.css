@@ -65,7 +65,8 @@
 }
 .bgimage {
     position: absolute;
-    width: 650px;
+    max-width: 670px;
+    max-height: 480px;
 }
 .sticker {
     width: 300px;
