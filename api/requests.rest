@@ -1,0 +1,21 @@
+GET http://localhost:3001/images
+
+###
+
+POST http://localhost:3001/image/new 
+Content-Type: application/json
+
+{
+"imageUrl": "https://imgs.search.brave.com/45RSG8ENuO7Ly045MsEuSn_xf81MtCUpnfKDnI7IRqg/rs:fit:600:350:1/g:ce/aHR0cDovL3BpeGVs/YXJ0bWFrZXItZGF0/YS03ODc0NjI5MTE5/My5ueWMzLmRpZ2l0/YWxvY2VhbnNwYWNl/cy5jb20vaW1hZ2Uv/OGY3MzczYTBjMWE1/OTdmLnBuZw", 
+"assetName": "Alert"
+}
+
+###
+
+PUT http://localhost:3001/image/update/642390d12bd01aaa39240460 
+Content-Type: application/json
+
+{
+    "assetName": "caw caw",
+    "imageUrl": "https://storage.googleapis.com/lawsdev/crow.png"
+}
