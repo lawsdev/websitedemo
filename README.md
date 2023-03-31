@@ -44,7 +44,7 @@
 6. Mapped API data with Javascript to use in app. 
 
 ## This prototype site
-# was an amalgamation of several different attempts at getting MongoDB to connect
-# with my code. I ended up creating my own API. It works though! I can happily say 
-# that I see all my silly image 'assetnames' in my MongoDB database. 
-# I am proud! 
+was an amalgamation of several different attempts at getting MongoDB to connect
+with my code. I ended up creating my own API. It works though! I can happily say 
+that I see all my silly image 'assetnames' in my MongoDB database. 
+I am proud! 
